@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Anteprima Foto -->
+    <ImageView
+        android:id="@+id/img_preview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        android:src="@android:drawable/ic_menu_gallery"
+        android:contentDescription="Anteprima Foto Kit" />
+
+    <Button
+        android:id="@+id/btn_select_photo"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="Seleziona Foto" />
+
+    <EditText
+        android:id="@+id/et_model_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Nome Modello (es. MG RX-78-2)"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_model_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Prezzo (€)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/et_model_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Note / Descrizione (opzionale)"
+        android:inputType="textMultiLine" />
+
+    <CheckBox
+        android:id="@+id/cb_spare_runners"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Runner di ricambio presenti" />
+
+</LinearLayout>

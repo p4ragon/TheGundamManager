@@ -1,0 +1,1 @@
+The app allows users to insert items from their model kit collections. It uses a different SQLite database in Room to keep track of the various Bandai grades, plus a few Chinese manufacturers. The app allows users to keep track of which model kits come with extra runners, as well as compute the value of their overall collection as well as their subcollections.
